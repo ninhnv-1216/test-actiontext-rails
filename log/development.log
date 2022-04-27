@@ -1,0 +1,1326 @@
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:02:52 +0700
+  
+ActiveRecord::ConnectionNotEstablished (Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:53:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:03:56 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: root.
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:05:03 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: root.
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:08:46 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: root.
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:08:47 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: root.
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:09:35 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: .
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:09:36 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: .
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:10:17 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: .
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:10:17 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: .
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:10:18 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: .
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:10:18 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: .
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:12:24 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: .
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:12:25 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: .
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:12:25 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: .
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:12:26 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: .
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:12:26 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: .
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:12:26 +0700
+  
+ActiveRecord::DatabaseConnectionError (There is an issue connecting to your database with your username/password, username: .
+
+Please check your database configuration to ensure the username/password are valid.
+):
+  
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:49:in `rescue in new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:43:in `new_client'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/mysql2_adapter.rb:23:in `mysql2_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.2.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.2.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.2.4) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.2.4) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE DATABASE `app_development` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE DATABASE `app_test` DEFAULT CHARACTER SET `utf8mb4`[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('5277929974492897470', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (5.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2022-04-27 03:13:22.420857', '2022-04-27 03:13:22.420857')[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('5277929974492897470')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:13:31 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/2.7.0/gems/railties-7.0.2.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/2.7.0/gems/railties-7.0.2.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 562)
+Completed 200 OK in 16ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 5525)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('5277929974492897470', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateActiveStorageTables (20220427031637)
+  [1m[35m (15.1ms)[0m  [1m[35mCREATE TABLE `active_storage_blobs` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `key` varchar(255) NOT NULL, `filename` varchar(255) NOT NULL, `content_type` varchar(255), `metadata` text, `service_name` varchar(255) NOT NULL, `byte_size` bigint NOT NULL, `checksum` varchar(255), `created_at` datetime(6) NOT NULL, UNIQUE INDEX `index_active_storage_blobs_on_key` (`key`))[0m
+  [1m[35m (16.6ms)[0m  [1m[35mCREATE TABLE `active_storage_attachments` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `blob_id` bigint NOT NULL, `created_at` datetime(6) NOT NULL, INDEX `index_active_storage_attachments_on_blob_id` (`blob_id`), UNIQUE INDEX `index_active_storage_attachments_uniqueness` (`record_type`, `record_id`, `name`, `blob_id`), CONSTRAINT `fk_rails_c3b3935057`
+FOREIGN KEY (`blob_id`)
+  REFERENCES `active_storage_blobs` (`id`)
+)[0m
+  [1m[35m (14.2ms)[0m  [1m[35mCREATE TABLE `active_storage_variant_records` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `blob_id` bigint NOT NULL, `variation_digest` varchar(255) NOT NULL, UNIQUE INDEX `index_active_storage_variant_records_uniqueness` (`blob_id`, `variation_digest`), CONSTRAINT `fk_rails_993965df05`
+FOREIGN KEY (`blob_id`)
+  REFERENCES `active_storage_blobs` (`id`)
+)[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220427031637')[0m
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateActionTextTables (20220427031638)
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE TABLE `action_text_rich_texts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `body` longtext, `record_type` varchar(255) NOT NULL, `record_id` bigint NOT NULL, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL, UNIQUE INDEX `index_action_text_rich_texts_uniqueness` (`record_type`, `record_id`, `name`))[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220427031638')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT RELEASE_LOCK('5277929974492897470')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:19:17 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20220427031831_create_posts.rb
+
+
+):
+  
+activerecord (7.0.2.4) lib/active_record/migration.rb:627:in `check_pending!'
+activerecord (7.0.2.4) lib/active_record/migration.rb:592:in `block (2 levels) in call'
+activesupport (7.0.2.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.2.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.2.4) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.2.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.2.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.2.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.2.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.2.4) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.2.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('5277929974492897470', 0)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreatePosts (20220427031831)
+  [1m[35m (9.6ms)[0m  [1m[35mCREATE TABLE `posts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `title` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20220427031831')[0m
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('5277929974492897470')[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:19:28 +0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/2.7.0/gems/railties-7.0.2.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/2.7.0/gems/railties-7.0.2.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.8ms | Allocations: 562)
+Completed 200 OK in 13ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 5106)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:19:31 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/2.7.0/gems/railties-7.0.2.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/2.7.0/gems/railties-7.0.2.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 366)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 1128)
+
+
+Started GET "/" for 127.0.0.1 at 2022-04-27 10:19:49 +0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/2.7.0/gems/railties-7.0.2.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/2.7.0/gems/railties-7.0.2.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 24)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 236)
+
+
+Started GET "/post" for 127.0.0.1 at 2022-04-27 10:22:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/post"):
+  
+Started GET "/posts" for 127.0.0.1 at 2022-04-27 10:22:11 +0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 977)
+  Rendered layout layouts/application.html.erb (Duration: 293.7ms | Allocations: 97882)
+Completed 200 OK in 307ms (Views: 300.2ms | ActiveRecord: 0.4ms | Allocations: 101501)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2022-04-27 10:22:15 +0700
+Processing by PostsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 75.1ms | Allocations: 20536)
+  Rendered posts/new.html.erb within layouts/application (Duration: 75.9ms | Allocations: 20849)
+  Rendered layout layouts/application.html.erb (Duration: 80.1ms | Allocations: 23667)
+Completed 200 OK in 114ms (Views: 78.8ms | ActiveRecord: 7.7ms | Allocations: 27484)
+
+
+Started POST "/posts" for 127.0.0.1 at 2022-04-27 10:22:31 +0700
+Processing by PostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"", "body"=>"<div><strong><del>Oke roi day =))</del></strong></div>"}, "commit"=>"Create Post"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/posts_controller.rb:27:in `block in create'
+  [1m[36mPost Create (0.4ms)[0m  [1m[32mINSERT INTO `posts` (`title`, `created_at`, `updated_at`) VALUES ('', '2022-04-27 03:22:31.571099', '2022-04-27 03:22:31.571099')[0m
+  ↳ app/controllers/posts_controller.rb:27:in `block in create'
+  [1m[36mActionText::RichText Create (0.6ms)[0m  [1m[32mINSERT INTO `action_text_rich_texts` (`name`, `body`, `record_type`, `record_id`, `created_at`, `updated_at`) VALUES ('body', '<div><strong><del>Oke roi day =))</del></strong></div>', 'Post', 1, '2022-04-27 03:22:31.607316', '2022-04-27 03:22:31.607316')[0m
+  ↳ app/controllers/posts_controller.rb:27:in `block in create'
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT `active_storage_attachments`.* FROM `active_storage_attachments` WHERE `active_storage_attachments`.`record_id` = 1 AND `active_storage_attachments`.`record_type` = 'ActionText::RichText' AND `active_storage_attachments`.`name` = 'embeds'[0m
+  ↳ app/controllers/posts_controller.rb:27:in `block in create'
+  [1m[36mPost Update (0.5ms)[0m  [1m[33mUPDATE `posts` SET `posts`.`updated_at` = '2022-04-27 03:22:31.609815' WHERE `posts`.`id` = 1[0m
+  ↳ app/controllers/posts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/posts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 65ms (ActiveRecord: 5.9ms | Allocations: 31197)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2022-04-27 10:22:31 +0700
+Processing by PostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:63:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.5ms | Allocations: 170)
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1356)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 4163)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.5ms | Allocations: 5915)
+
+
+Started GET "/posts" for 127.0.0.1 at 2022-04-27 10:22:38 +0700
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT `posts`.* FROM `posts`[0m
+  ↳ app/views/posts/index.html.erb:6
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 956)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 3755)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.9ms | Allocations: 4027)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2022-04-27 10:22:39 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:63:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/_post.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered posts/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 601)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3391)
+Completed 200 OK in 17ms (Views: 11.7ms | ActiveRecord: 0.5ms | Allocations: 4133)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2022-04-27 10:23:00 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:63:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mActionText::RichText Load (2.5ms)[0m  [1m[34mSELECT `action_text_rich_texts`.* FROM `action_text_rich_texts` WHERE `action_text_rich_texts`.`record_id` = 1 AND `action_text_rich_texts`.`record_type` = 'Post' AND `action_text_rich_texts`.`name` = 'body' LIMIT 1[0m
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered vendor/bundle/ruby/2.7.0/gems/actiontext-7.0.2.4/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 3.2ms | Allocations: 499)
+  Rendered posts/_post.html.erb (Duration: 13.6ms | Allocations: 2045)
+  Rendered posts/show.html.erb within layouts/application (Duration: 16.0ms | Allocations: 2905)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 5913)
+Completed 200 OK in 38ms (Views: 33.1ms | ActiveRecord: 2.9ms | Allocations: 7314)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2022-04-27 10:23:01 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:63:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT `action_text_rich_texts`.* FROM `action_text_rich_texts` WHERE `action_text_rich_texts`.`record_id` = 1 AND `action_text_rich_texts`.`record_type` = 'Post' AND `action_text_rich_texts`.`name` = 'body' LIMIT 1[0m
+  ↳ app/views/posts/_post.html.erb:5
+  Rendered vendor/bundle/ruby/2.7.0/gems/actiontext-7.0.2.4/app/views/action_text/contents/_content.html.erb within layouts/action_text/contents/_content (Duration: 11.6ms | Allocations: 263)
+  Rendered posts/_post.html.erb (Duration: 29.3ms | Allocations: 1452)
+  Rendered posts/show.html.erb within layouts/application (Duration: 30.7ms | Allocations: 2036)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 4826)
+Completed 200 OK in 44ms (Views: 37.4ms | ActiveRecord: 0.9ms | Allocations: 5556)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2022-04-27 10:23:18 +0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:63:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mActionText::RichText Load (0.4ms)[0m  [1m[34mSELECT `action_text_rich_texts`.* FROM `action_text_rich_texts` WHERE `action_text_rich_texts`.`record_id` = 1 AND `action_text_rich_texts`.`record_type` = 'Post' AND `action_text_rich_texts`.`name` = 'body' LIMIT 1[0m
+  ↳ app/views/posts/_form.html.erb:20
+  Rendered posts/_form.html.erb (Duration: 20.5ms | Allocations: 2835)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 26.8ms | Allocations: 3193)
+  Rendered layout layouts/application.html.erb (Duration: 37.6ms | Allocations: 5992)
+Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 1.1ms | Allocations: 6777)
+
+
+Started POST "/rails/active_storage/direct_uploads" for 127.0.0.1 at 2022-04-27 10:23:34 +0700
+Processing by ActiveStorage::DirectUploadsController#create as JSON
+  Parameters: {"blob"=>{"filename"=>"db-table.png", "content_type"=>"image/png", "byte_size"=>77766, "checksum"=>"DRIqH67YMjF4B+RVOq/Oug=="}, "direct_upload"=>{"blob"=>{"filename"=>"db-table.png", "content_type"=>"image/png", "byte_size"=>77766, "checksum"=>"DRIqH67YMjF4B+RVOq/Oug=="}}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Blob Create (1.2ms)[0m  [1m[32mINSERT INTO `active_storage_blobs` (`key`, `filename`, `content_type`, `metadata`, `service_name`, `byte_size`, `checksum`, `created_at`) VALUES ('ttbop4ch5d4wwx2ie3p8onbnl13u', 'db-table.png', 'image/png', NULL, 'local', 77766, 'DRIqH67YMjF4B+RVOq/Oug==', '2022-04-27 03:23:34.372673')[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+[36m  Disk Storage (1.6ms) [0m[34mGenerated URL for file at key: ttbop4ch5d4wwx2ie3p8onbnl13u (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDam9JYTJWNVNTSWhkSFJpYjNBMFkyZzFaRFIzZDNneWFXVXpjRGh2Ym1KdWJERXpkUVk2QmtWVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaE5qYjI1MFpXNTBYMnhsYm1kMGFHa0R4aThCT2cxamFHVmphM04xYlVraUhVUlNTWEZJTmpkWlRXcEdORUlyVWxaUGNTOVBkV2M5UFFZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNC0yN1QwMzoyODozNC4zODJaIiwicHVyIjoiYmxvYl90b2tlbiJ9fQ==--0f0d97447a393c1bcd86cc8869aa506f95f5cd45)[0m
+Completed 200 OK in 53ms (Views: 0.5ms | ActiveRecord: 7.2ms | Allocations: 9252)
+
+
+Started PUT "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDam9JYTJWNVNTSWhkSFJpYjNBMFkyZzFaRFIzZDNneWFXVXpjRGh2Ym1KdWJERXpkUVk2QmtWVU9oRmpiMjUwWlc1MFgzUjVjR1ZKSWc1cGJXRm5aUzl3Ym1jR093WlVPaE5qYjI1MFpXNTBYMnhsYm1kMGFHa0R4aThCT2cxamFHVmphM04xYlVraUhVUlNTWEZJTmpkWlRXcEdORUlyVWxaUGNTOVBkV2M5UFFZN0JsUTZFWE5sY25acFkyVmZibUZ0WlRvS2JHOWpZV3c9IiwiZXhwIjoiMjAyMi0wNC0yN1QwMzoyODozNC4zODJaIiwicHVyIjoiYmxvYl90b2tlbiJ9fQ==--0f0d97447a393c1bcd86cc8869aa506f95f5cd45" for 127.0.0.1 at 2022-04-27 10:23:34 +0700
+Processing by ActiveStorage::DiskController#update as */*
+  Parameters: {"encoded_token"=>"[FILTERED]"}
+[36m  Disk Storage (4.5ms) [0m[32mUploaded file to key: ttbop4ch5d4wwx2ie3p8onbnl13u (checksum: DRIqH67YMjF4B+RVOq/Oug==)[0m
+Completed 204 No Content in 5ms (ActiveRecord: 0.0ms | Allocations: 1282)
+
+
+Started GET "/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bffcde324e498aea43cea15bf81300ac11fe65e9/db-table.png" for 127.0.0.1 at 2022-04-27 10:23:34 +0700
+Processing by ActiveStorage::Blobs::RedirectController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBCZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bffcde324e498aea43cea15bf81300ac11fe65e9", "filename"=>"db-table"}
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT `active_storage_blobs`.* FROM `active_storage_blobs` WHERE `active_storage_blobs`.`id` = 1 LIMIT 1[0m
+[36m  Disk Storage (0.6ms) [0m[34mGenerated URL for file at key: ttbop4ch5d4wwx2ie3p8onbnl13u (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhkSFJpYjNBMFkyZzFaRFIzZDNneWFXVXpjRGh2Ym1KdWJERXpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SaUxYUmhZbXhsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25aR0l0ZEdGaWJHVXVjRzVuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJT2FXMWhaMlV2Y0c1bkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6IjIwMjItMDQtMjdUMDM6Mjg6MzQuNDgwWiIsInB1ciI6ImJsb2Jfa2V5In19--c4c5e91f52a48df0116dd1ace709b119c1ecfe87/db-table.png)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhkSFJpYjNBMFkyZzFaRFIzZDNneWFXVXpjRGh2Ym1KdWJERXpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SaUxYUmhZbXhsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25aR0l0ZEdGaWJHVXVjRzVuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJT2FXMWhaMlV2Y0c1bkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6IjIwMjItMDQtMjdUMDM6Mjg6MzQuNDgwWiIsInB1ciI6ImJsb2Jfa2V5In19--c4c5e91f52a48df0116dd1ace709b119c1ecfe87/db-table.png
+Completed 302 Found in 16ms (ActiveRecord: 1.4ms | Allocations: 1832)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhkSFJpYjNBMFkyZzFaRFIzZDNneWFXVXpjRGh2Ym1KdWJERXpkUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUTJsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1SaUxYUmhZbXhsTG5CdVp5STdJR1pwYkdWdVlXMWxLajFWVkVZdE9DY25aR0l0ZEdGaWJHVXVjRzVuQmpzR1ZEb1JZMjl1ZEdWdWRGOTBlWEJsU1NJT2FXMWhaMlV2Y0c1bkJqc0dWRG9SYzJWeWRtbGpaVjl1WVcxbE9ncHNiMk5oYkE9PSIsImV4cCI6IjIwMjItMDQtMjdUMDM6Mjg6MzQuNDgwWiIsInB1ciI6ImJsb2Jfa2V5In19--c4c5e91f52a48df0116dd1ace709b119c1ecfe87/db-table.png" for 127.0.0.1 at 2022-04-27 10:23:34 +0700
+Processing by ActiveStorage::DiskController#show as PNG
+  Parameters: {"encoded_key"=>"[FILTERED]", "filename"=>"db-table"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 174)
+
+
+Started GET "/posts/1/edit" for 127.0.0.1 at 2022-04-27 10:25:38 +0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT `posts`.* FROM `posts` WHERE `posts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/posts_controller.rb:63:in `set_post'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  [1m[36mActionText::RichText Load (0.8ms)[0m  [1m[34mSELECT `action_text_rich_texts`.* FROM `action_text_rich_texts` WHERE `action_text_rich_texts`.`record_id` = 1 AND `action_text_rich_texts`.`record_type` = 'Post' AND `action_text_rich_texts`.`name` = 'body' LIMIT 1[0m
+  ↳ app/views/posts/_form.html.erb:20
+  Rendered posts/_form.html.erb (Duration: 8.9ms | Allocations: 2455)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 9.5ms | Allocations: 2587)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 5389)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 1.4ms | Allocations: 6118)
+
+
